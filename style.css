@@ -106,6 +106,29 @@ main img{
     align-items: flex-end;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#esatobbi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3px;
+    column-gap: 3px;
+}
+
+#esatobbi :nth-child(){
+    flex: 1 1 auto;
+}
+
+#utolsokulon{
+    flex-grow: 2;
+}
+
+
 footer {
     display: flex;  
     align-items: center;
