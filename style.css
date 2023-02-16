@@ -55,11 +55,6 @@ nav {
     align-items: center;
     flex-direction: column;
 }
-
-#aktiv {
-    background-color: var(--color-1);
-    color: var(--color-2);
-}
 nav a, nav a:visited {
     all: unset;
     cursor: pointer;
@@ -67,13 +62,14 @@ nav a, nav a:visited {
     transition: 1s;
     color: var(--color-1);
     border-radius: 10px;
-}nav a:hover #aktiv {
-    color: var(--color-1);
-    background-color: var(--color-2);
 }
 nav a:hover, nav a:active{
     background-color: var(--color-1);
     color: var(--color-2);
+}
+nav a .aktiv {
+    color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 article {
@@ -91,6 +87,18 @@ footer {
     color: var(--color-1);
     padding: 5px;
 }
+footer a, footer a:visited {
+    all: unset;
+    cursor: pointer;
+    padding: 5px;
+    transition: 1s;
+    color: var(--color-1);
+    border-radius: 10px;
+}
+/* footer a:hover, footer a:active{
+
+} */
+
 
 
 @media only screen and (max-width: 1200px){
@@ -98,9 +106,9 @@ footer {
         width: 100vw;
         margin: 0;
     }
-    nav {
+    /* nav {
         
-    }
+    } */
     #nav-right {
         display: none;
     }
